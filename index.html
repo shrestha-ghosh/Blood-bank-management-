@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapid Red</title>
+    <link rel="stylesheet" href="css/home.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="Images/favicon/site.webmanifest">
+    
+</head>
+
+<body>
+
+     <!-- NAVBAR  -->
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="Images/logo-nobackground.png" alt="logo"></a>
+            </div>
+            <div id="mainListDiv" class="main_list fill">
+                <ul class="navlinks">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Sign in</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+     <!-- NAVBAR ENDS  -->
+
+     <!-- MAIN SECTION  -->
+    <main class="home">
+    </main>
+
+    <script src="js/scripts.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+    <!-- MAIN SECTION ENDS -->
+
+     <!-- FOOTER  -->
+    <footer>
+        <div class="row primary">
+            <div class="column about">
+                <h3>Rapid Red</h3>
+                <p>
+                    At the Rapid Red, we are dedicated to saving lives by providing a safe and reliable supply of blood and blood products to hospitals and medical facilities and also every individuals in our community. Our mission is to ensure that patients in need of blood transfusions receive the necessary support, at any position and at any time ,to promote voluntary blood donation as an essential part of community health.
+                </p>
+            </div>
+        </div>
+        <div class="row copyright">
+            <p>&copy; 2023 Rapid Red | All Rights Reserved</p>
+        </div>
+    </footer>
+     <!-- FOOTER ENDS -->
+
+</body>
+
+</html>
