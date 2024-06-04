@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapid Red</title>
+    <link rel="stylesheet" href="/static/about.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="Images/favicon/site.webmanifest">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR  -->
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="/Images/logo-nobackground.png" alt="logo"></a>
+            </div>
+            <div id="mainListDiv" class="main_list fill">
+                <ul class="navlinks">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="/templates/service.html">Service</a></li>
+                    <li><a href="#" class="active">About</a></li>
+                    <li><a href="/templates/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <!-- NAVBAR ENDS  -->
+
+
+    <!-- MAIN SECTION  -->
+    <!-- <section class="home"> -->
+    <main class="home">
+        <div class="contact-container">
+            <div class="cont-img">
+            </div>
+            <div class="cont-right">
+                <div class="cont-text">
+                    <h4>About</h4>
+                    <p>
+                        At Rapid Red, our mission is to provide a safe, reliable, and sustainable supply of blood and
+                        blood products to hospitals and healthcare facilities in our region. We play a crucial role in
+                        supporting medical treatments, emergency care, surgeries, and various healthcare needs by
+                        ensuring a consistent availability of blood components.
+                    </p>
+                </div>
+                <div class="body">
+                    <p>
+                        Remember that donating blood is a valuable contribution that can save lives and improve the health of individuals in need. If you're interested in donating, reach out to your local blood services organization to find out more about the donation process and eligibility requirements.
+
+                    </p>
+                </div>
+                <div class="points">
+                    <ul style="list-style-type:disc;">
+                        <li>Vice Chairman is elected by the members of the Managing Body.</li>
+                        <li>The National Managing Body consists of 18 members.</li>
+                        <li>The Chairman and 6 members are nominated by the President.</li>
+                        <li>The remaining 12 are elected by the state and union territory branches through an electoral
+                            college.</li>
+                        <li>The Managing Body is responsible for governance and supervision of the functions of the
+                            society through a number of committees.</li>
+                        <li>The Secretary General is the Chief Executive of the Society.</li>
+                    </ul>
+
+                    <ul>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!-- </section> -->
+
+    <script src="/js/scripts.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+    <!-- MAIN SECTION ENDS -->
+
+
+
+    <!-- FOOTER  -->
+    <footer>
+        <div class="row primary">
+            <div class="column about">
+                <h3>Rapid Red</h3>
+                <p>
+                    At the Rapid Red, we are dedicated to saving lives by providing a safe and reliable supply of blood
+                    and blood products to hospitals and medical facilities and also every individuals in our community.
+                    Our mission is to ensure that patients in need of blood transfusions receive the necessary support,
+                    at any position and at any time ,to promote voluntary blood donation as an essential part of
+                    community health.
+                </p>
+            </div>
+        </div>
+        <div class="row copyright">
+            <p>&copy; 2023 Rapid Red | All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- FOOTER ENDS -->
+
+</body>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapid Red</title>
+    <link rel="stylesheet" href="/static/contact.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="Images/favicon/site.webmanifest">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR  -->
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="/Images/logo-nobackground.png" alt="logo"></a>
+            </div>
+            <div id="mainListDiv" class="main_list fill">
+                <ul class="navlinks">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="/templates/service.html">Service</a></li>
+                    <li><a href="/templates/about.html">About</a></li>
+                    <li><a href="#" class="active">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <!-- NAVBAR ENDS  -->
+
+    <!-- MAIN SECTION  -->
+    <!-- <section class="home"> -->
+    <main class="home">
+        <div class="contact-container">
+            <div class="cont-img">
+            </div>
+            <div class="cont-right">
+                <div class="cont-text">
+                    <h4>Contact us</h4>
+                    <p>
+                        We are here to answer your questions, schedule blood donations, and collaborate with you to save
+                        lives.
+                        Reach out to us via phone, email, or visit our office for more information.
+                        Thank you for being a lifesaver and supporting our mission to make a difference in the lives of
+                        those in
+                        need!
+                    </p>
+                </div>
+                <div class="form-container">
+                    <form id="contact" action="https://formsubmit.co/b1c5da7b2624be3edb63ab063ed9bf20" method="post">
+                        <h4>Send your message</h4>
+                        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                        <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                        <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+                        <textarea placeholder="Type your message here...." tabindex="4" required></textarea>
+                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!-- </section> -->
+
+    <script src="/js/scripts.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+    <!-- MAIN SECTION ENDS -->
+
+    <!-- FOOTER  -->
+    <footer>
+        <div class="row primary">
+            <div class="column about">
+                <h3>Rapid Red</h3>
+                <p>
+                    At the Rapid Red, we are dedicated to saving lives by providing a safe and reliable supply of blood
+                    and blood products to hospitals and medical facilities and also every individuals in our community.
+                    Our mission is to ensure that patients in need of blood transfusions receive the necessary support,
+                    at any position and at any time ,to promote voluntary blood donation as an essential part of
+                    community health.
+                </p>
+            </div>
+        </div>
+        <div class="row copyright">
+            <p>&copy; 2023 Rapid Red | All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- FOOTER ENDS -->
+
+</body>
+
+</html>
