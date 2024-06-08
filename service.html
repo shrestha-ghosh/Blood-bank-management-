@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapid Red</title>
+    <link rel="stylesheet" href="/static/service.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="Images/favicon/site.webmanifest">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR  -->
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="/Images/logo-nobackground.png" alt="logo"></a>
+            </div>
+            <div id="mainListDiv" class="main_list fill">
+                <ul class="navlinks">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#" class="active">Service</a></li>
+                    <li><a href="/templates/about.html">About</a></li>
+                    <li><a href="/templates/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+
+
+    <!-- NAVBAR ENDS  -->
+
+    <!-- MAIN SECTION  -->
+    <main class="home">
+        <div class="form-container">
+            <h2>Submit Your Blood Donation Request</h2>
+            <form action="submit_form.php" method="post">
+                <div>
+                    <label for="bloodGroup">Blood Group:</label>
+                    <select id="bloodGroup" name="bloodGroup" required>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="quantity">Quantity (in units):</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+                </div>
+                <div>
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state" required>
+                </div>
+                <div>
+                    <label for="district">District:</label>
+                    <input type="text" id="district" name="district" required>
+                </div>
+                <!-- <input type="submit" value="Submit"> -->
+                <button name="submit" type="submit" value="Submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </form>
+        </div>
+
+    </main>
+
+    <script src="/js/scripts.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+    <!-- FOOTER  -->
+    <footer>
+        <div class="row primary">
+            <div class="column about">
+                <h3>Rapid Red</h3>
+                <p>
+                    At the Rapid Red, we are dedicated to saving lives by providing a safe and reliable supply of blood
+                    and blood products to hospitals and medical facilities and also every individuals in our community.
+                    Our mission is to ensure that patients in need of blood transfusions receive the necessary support,
+                    at any position and at any time ,to promote voluntary blood donation as an essential part of
+                    community health.
+                </p>
+            </div>
+        </div>
+        <div class="row copyright">
+            <p>&copy; 2023 Rapid Red | All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- FOOTER ENDS -->
+
+</body>
+
+</html>
